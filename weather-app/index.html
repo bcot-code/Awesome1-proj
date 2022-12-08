@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya&display=swap" rel="stylesheet" />
+    <title>Weather Forecast</title>
+</head>
+
+<body>
+    <h1 class="overline" id="city">
+        <div class="underline weather1"></div>
+    </h1>
+    <div id="smooth-container">
+        <button class="weather1 cta">
+            <i class="fa fa-cloud" style="font-size: 32px; display: inline-block;"></i>
+            <span class="location_text">Location</span>
+        </button>
+    </div>
+    <div class="jscontroller" id="weather">
+        <div class="condition temp-1" id="tempC">49 °F</div>
+        <span class="°c" id="tempF">|°C</span>
+
+        <ul style="list-style: none;" id="time">
+            <li id="date"></li>
+        </ul>
+        <p id="wrapper-description" class="wrapper-bg"></p>
+    </div>
+
+    <!-- Cities temperatures not accurate-->
+    <div id="container">
+        <div class="list lst-1">Tokyo - 56°F</div>
+        <div class="list lst-2">Rome - 58°F</div>
+        <div class="list lst-3">Zürich - 46°F</div>
+    </div>
+    <!--Weather foreast to SF.-->
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page"
+                href="https://weather.com/weather/tenday/l/54f9d8baac32496f6b5497b4bf7a277c3e2e6cc5625de69680e6169e7e38e9a8">10
+                days of weather</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"
+                href="https://weather.com/weather/monthly/l/54f9d8baac32496f6b5497b4bf7a277c3e2e6cc5625de69680e6169e7e38e9a8">Monthly</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Read More</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">More infor</a>
+        </li>
+    </ul>
+    <!--Current Humidity-->
+    <div class="row">
+        <div class="col-6">
+            <div class="clearfix">
+                <div class="float-md-right">
+                    <ul style="list-style: none;" id="style">
+                        <li class="styl-1">Humidity:<span id="humidity"></span></li>
+                        <br /><br />
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search form -->
+    <!--This search form idea was -https://codepen.io/himalayasingh 
+    just changed the style on some.-->
+    <form id="search_form" method="get" action="">
+        <div class="active-purple-3 active-purple-4 mb-4" id="tb">
+            <div id="td">
+                <input type="search" class="form-control" placeholder="Look for city here" autofocus="on"
+                    autocomplete="off" id="city-input" />
+            </div>
+            <div class="col-3">
+                <input type="submit" value="Search" class="form-control td" />
+            </div>
+        </div>
+        <div class="active-purple active-purple-2 mb-3">
+            <div class="td" id="s-cover">
+                <button type="submit" class="btn1"></button>
+            </div>
+        </div>
+    </form>
+    <!-- Nav bar -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </nav>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

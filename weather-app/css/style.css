@@ -1,0 +1,179 @@
+body {
+  background-image: url("https://www.gannett-cdn.com/-mm-/c472e2b2f354224323276626285c7d595262faba/c=0-210-3600-2244/local/-/media/2016/06/10/Cincinnati/Cincinnati/636011561949676545-770-3767632.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10%;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #113f67;
+  font-style: oblique;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #e56ea4;
+}
+.overline {
+  text-decoration: overline;
+  text-decoration-color: #e84a5f;
+}
+
+.active-purple-4 input[type="text"]:focus:not([readonly]) {
+  border: 1px solid #ce93d8;
+  box-shadow: 0 0 0 1px #ce93d8;
+}
+.active-purple-3 input[type="text"] {
+  border: 1px solid #ce93d8;
+  box-shadow: 0 0 0 1px #ce93d8;
+}
+div.condition {
+  display: flex;
+  color: rgb(233, 188, 64);
+}
+#weather {
+  font-family: "Noto Serif Oriya", serif;
+  font-size: 75px;
+}
+#smooth-container {
+  display: flex;
+  justify-content: center;
+}
+.cta {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid rgb(11, 58, 112);
+  background-color: cornflowerblue;
+  color: #fff;
+  transition: width 0.8s;
+}
+.cta:hover {
+  width: 180px;
+  transition: width 0.7s;
+}
+.cta i {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.cta:hover i {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.cta .location_text {
+  max-width: 0;
+  display: inline-block;
+  -webkit-transition: color 0.25s 1.5s, max-width 2s;
+  transition: color 0.25s 1.5s, max-width 2s;
+  overflow: hidden;
+  color: blanchedalmond;
+}
+.cta:hover .location_text {
+  max-width: 300px;
+  color: white;
+}
+#container {
+  display: table;
+  padding: 5%;
+  max-width: 20px;
+  border: 6px outset;
+  text-align: end;
+  margin: auto;
+  position: relative;
+  float: right;
+}
+.condition {
+  position: relative;
+  justify-content: center;
+  padding-top: 20%;
+}
+.°c {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 40px;
+}
+#style {
+  margin: 0 0px 20px;
+  padding: 6px;
+}
+.styl-1 {
+  color: slateblue;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 50px;
+  font-size: 30px;
+  margin-block-start: -200px;
+}
+#time {
+  padding-bottom: 1px;
+  position: absolute;
+  top: 150px;
+}
+#date {
+  font-size: 30px;
+}
+.list {
+  color: #012b50;
+  font-size: 30px;
+}
+
+.lst-1,
+.lst-2,
+.lst-3 {
+  top: 0px;
+  padding-top: 40px;
+  margin-left: 35px;
+}
+.lst-1:hover {
+  cursor: pointer;
+  color: aliceblue;
+}
+.lst-2:hover {
+  cursor: pointer;
+  color: rgb(100, 106, 110);
+}
+.lst-3:hover {
+  cursor: pointer;
+  color: aliceblue;
+}
+.tb {
+  display: table;
+  width: 100%;
+}
+.td {
+  vertical-align: baseline;
+}
+input,
+button {
+  font-family: Nunito;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+#search_form {
+  position: fixed;
+  top: 90%;
+  left: 0;
+  right: 0;
+  width: 600px;
+  padding: 70px;
+  margin: -83px auto 0 auto;
+  background-color: #75a1ff;
+  box-shadow: 0 10px 40px;
+  transform: scale(0.6);
+  border-radius: 10px;
+}
+form {
+  height: 150px;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  line-height: normal;
+}
+input[type="text"]::placeholder {
+  color: rgba(34, 23, 8, 0.404);
+}
